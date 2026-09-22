@@ -16,7 +16,7 @@
 - 💻 Trabalho com desenvolvimento **full stack**, unindo bancos relacionais e não relacionais
 - 🌱 Sempre estudando novas tecnologias e boas práticas
 - 📫 Como me encontrar: **[LinkedIn](https://www.linkedin.com/in/guilhermealcantara)** · **[E-mail](mailto:guialcantara96@gmail.com)**
-- ⚡ Fun fact: _(coloca aqui alguma curiosidade sua)_
+- ⚡ Fun fact: Antes do código, trabalhei e me formei em eletrônica e mecatrônica.
 
 ---
 
