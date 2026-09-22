@@ -33,7 +33,7 @@ $ status
 <h2 align="center">⚡ Do circuito ao deploy</h2>
 
 <p align="center">
-  <img src="https://SEU-LINK-DA-ANIMACAO" alt="Do circuito ao deploy — electronics, code, QA and deploy" />
+  <img src="https://raw.githubusercontent.com/gui-alcantaraa/gui-alcantaraa/refs/heads/main/assets/circuito-ao-deploy.svg" alt="Do circuito ao deploy — eletrônica, código, QA e deploy" />
 </p>
 
 <p align="center">

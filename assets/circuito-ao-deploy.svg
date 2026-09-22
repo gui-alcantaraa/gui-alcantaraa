@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 820 190" width="820" height="190" role="img" aria-label="Do circuito ao deploy: eletrônica, código, QA e deploy">
+  <title>Do circuito ao deploy</title>
+
+  <defs>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <path id="trace"
+      d="M 90 96 H 195 L 220 74 H 275 L 300 96 H 405 L 430 118 H 485 L 510 96 H 615 L 640 74 H 695 L 720 96"
+      pathLength="100" />
+  </defs>
+
+  <rect width="820" height="190" rx="14" fill="#0D1117" stroke="#21262D" />
+
+  <!-- trilha da placa: base apagada + corrente em movimento -->
+  <use href="#trace" xlink:href="#trace" fill="none" stroke="#1F6FEB" stroke-width="3" stroke-linecap="round" opacity="0.3" />
+  <use href="#trace" xlink:href="#trace" fill="none" stroke="#58A6FF" stroke-width="3" stroke-linecap="round"
+    stroke-dasharray="9 91" filter="url(#glow)">
+    <animate attributeName="stroke-dashoffset" values="0;-100" dur="4s" calcMode="linear" repeatCount="indefinite" />
+  </use>
+
+  <!-- ilhas de solda nas curvas -->
+  <g fill="#30363D">
+    <rect x="217" y="71" width="6" height="6" rx="1" />
+    <rect x="272" y="71" width="6" height="6" rx="1" />
+    <rect x="427" y="115" width="6" height="6" rx="1" />
+    <rect x="482" y="115" width="6" height="6" rx="1" />
+    <rect x="637" y="71" width="6" height="6" rx="1" />
+    <rect x="692" y="71" width="6" height="6" rx="1" />
+  </g>
+
+  <!-- estações -->
+  <g fill="#0D1117" stroke="#58A6FF" stroke-width="2">
+    <circle cx="90" cy="96" r="20" />
+    <circle cx="300" cy="96" r="20" />
+    <circle cx="510" cy="96" r="20" />
+    <circle cx="720" cy="96" r="20" />
+  </g>
+
+  <!-- anel que acende quando o pulso chega -->
+  <g fill="none" stroke="#58A6FF" stroke-width="2">
+    <circle cx="90" cy="96">
+      <animate attributeName="r" values="20;33;33" keyTimes="0;0.13;1" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.9;0;0" keyTimes="0;0.13;1" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="96">
+      <animate attributeName="r" values="20;20;33;33" keyTimes="0;0.31;0.44;1" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.31;0.44;1" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="510" cy="96">
+      <animate attributeName="r" values="20;20;33;33" keyTimes="0;0.61;0.74;1" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.9;0;0" keyTimes="0;0.61;0.74;1" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="720" cy="96">
+      <animate attributeName="r" values="20;20;33" keyTimes="0;0.88;1" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0;0.9;0" keyTimes="0;0.88;1" dur="4s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- ícones: resistor, código, teste aprovado, foguete -->
+  <g fill="none" stroke="#58A6FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 78 96 H 83 L 86 88 L 90 104 L 94 88 L 97 96 H 102" />
+    <path d="M 508 97 L 513 103 L 521 88" />
+    <path d="M 720 84 L 728 102 L 720 97 L 712 102 Z" fill="#0D1117" />
+  </g>
+  <text x="300" y="101" fill="#58A6FF" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"
+    font-size="15" font-weight="600" text-anchor="middle">&lt;/&gt;</text>
+
+  <!-- rótulos -->
+  <g fill="#8B949E" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11"
+    letter-spacing="1.5" text-anchor="middle">
+    <text x="90" y="146">ELETRÔNICA</text>
+    <text x="300" y="146">CÓDIGO</text>
+    <text x="510" y="146">QA</text>
+    <text x="720" y="146">DEPLOY</text>
+  </g>
+
+  <!-- pulso de energia percorrendo a trilha -->
+  <circle r="5" fill="#E6F1FF" filter="url(#glow)">
+    <animateMotion dur="4s" calcMode="linear" repeatCount="indefinite">
+      <mpath href="#trace" xlink:href="#trace" />
+    </animateMotion>
+  </circle>
+</svg>
