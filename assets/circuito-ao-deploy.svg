@@ -21,7 +21,7 @@
   <use href="#trace" xlink:href="#trace" fill="none" stroke="#1F6FEB" stroke-width="3" stroke-linecap="round" opacity="0.3" />
   <use href="#trace" xlink:href="#trace" fill="none" stroke="#58A6FF" stroke-width="3" stroke-linecap="round"
     stroke-dasharray="9 91" filter="url(#glow)">
-    <animate attributeName="stroke-dashoffset" values="0;-100" dur="4s" calcMode="linear" repeatCount="indefinite" />
+    <animate attributeName="stroke-dashoffset" values="9;-91" dur="4s" calcMode="linear" repeatCount="indefinite" />
   </use>
 
   <!-- ilhas de solda nas curvas -->
