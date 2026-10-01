@@ -45,17 +45,6 @@ $ status
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
 </p>
 
-<h2 align="center">🧪 QA mindset</h2>
-
-<p align="center">
-  <code>Build</code> → <code>Test</code> → <code>Automate</code> → <code>Improve</code> → <code>Deploy</code>
-</p>
-
-<p align="center">
-  Software should not only work.<br/>
-  It should be reliable, testable and ready to scale.
-</p>
-
 <h2 align="center">🚀 Parceros</h2>
 
 <p align="center">
